@@ -38,7 +38,42 @@ npm create vite@latest
    
 -------------------------------------------------------------------------------------------------------------------
 
-########    MORE INTO REACT WITH VITE    ##########
- 
+########    MORE INTO REACT    ##########
 
+WE KNOW THAT WE EXPORT A FUNCTION WHICH RETURNS HTML (JSX) THIS FUNCTION IS THEN RENDER ONTO THE DOM <FUNCTION/> BUT AS WE 
+KNOW THAT BASICALLY WE ARE RENDERING A FUNCTION IN FORM OF <FUNCTION/>
+HENCE AS IT IS A  FUCTION WE CAN ALSO USE IT IN FUNTION() THIS FORM .
+BUT WE CANNOT DIRECTLY USE AN OBJECT TO RENDER ONTO THE DOM AS THIS IS THE WRONG SYNTAX.
 
+REACT HAS MANY METHODS THAT HELP US MANIPULATE THE DOM ONE OF THEM IS createElement .These elements are injected by Babel.
+
+Syntax =>
+const reactelement = React.createElement(
+    'a', (html tags)
+    {
+         href:'https://google.com',target='_blank'              ( an object to set attributes)
+    },
+    click me to visit google                            (text to be shown)
+
+)
+What is Babel used for in React?
+Babel is a JavaScript compiler that converts modern JavaScript code into a version compatible with all browsers. Babel enables React developers to use the latest JavaScript syntax in their components. Babel transpiles modern JavaScript for use in React components and all browsers.
+---------------------------------------------------------------------------------------------------------------------------------
+
+#########  HOW JAVASCRIPT IS INJECTED IN JSX   #########
+
+SO TO INJECT VARIABLES OF JS IN FUNCTIONS WE ENCLOSE THEM IN CURLY BRACES
+EX:
+function login(){
+    let username = "Kshitij"
+    return(
+        <>
+        <h1>Hey user {username}!! Welcome Back</h1>
+        </>
+    )
+}
+HERE {username} is called as evaluated expression that is the final outcome of that expression, here we cannot use any if else 
+condition it should be done before . The evaluated expression is directly injected after tree is created.
+
+---------------------------------------------------------------------------------------------------------------------------------
+##########  Counter Project   ###########
