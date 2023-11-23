@@ -1,4 +1,5 @@
 ########   BASICS   ##########
+
 To create a react file there are many ways
 npm -> node packet manager (used to install libraries)
 npx -> node packet executer  (not intall libraries but use them)
@@ -58,7 +59,7 @@ const reactelement = React.createElement(
 )
 What is Babel used for in React?
 Babel is a JavaScript compiler that converts modern JavaScript code into a version compatible with all browsers. Babel enables React developers to use the latest JavaScript syntax in their components. Babel transpiles modern JavaScript for use in React components and all browsers.
----------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------
 
 #########  HOW JAVASCRIPT IS INJECTED IN JSX   #########
 
@@ -75,5 +76,23 @@ function login(){
 HERE {username} is called as evaluated expression that is the final outcome of that expression, here we cannot use any if else 
 condition it should be done before . The evaluated expression is directly injected after tree is created.
 
----------------------------------------------------------------------------------------------------------------------------------
-##########  Counter Project   ###########
+-------------------------------------------------------------------------------------------------------------------
+##########  React Hooks   ###########
+
+We saw that in counter project when we clicked add value button the value was updating in console but not in UI
+Hence React take control of UI updation through the help of React Hooks.
+Hooks enable react to update all instances at once.
+Hence if any value is to be updated at various places it is done itself by react through help of hooks . We need not grab all elements using id or class as we used to do in JavaScript.
+This reduces Code Complexity and is easier for the developer for code debugging.
+
+useState Hook -> Used to change state and propogate change in UI or DOM .
+useState hook returns two things in form of array 1st is the counterValue and 2nd is a function that takes care 
+of the 1st value.
+
+Syntax ->  const [counterValue,setCounterValue] = useState(default value) Default value van be anything
+the function needs to be called while updating value ...REFER COUNTER PROJECT
+
+MORE HOOKS IN LATER PROJECTS..!!!
+
+-------------------------------------------------------------------------------------------------------------------
+
