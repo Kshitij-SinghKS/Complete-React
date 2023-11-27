@@ -1,5 +1,6 @@
 function customrender(reactelement,mainelement)  //function used render dom element of specified type
 {
+    //
     // const domelement = document.createElement(reactelement.type)
     // domelement.setAttribute('href',reactelement.props.href)
     // domelement.setAttribute('target',reactelement.props.target)

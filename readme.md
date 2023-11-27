@@ -1,4 +1,4 @@
-########   BASICS   ##########
+########   ***BASICS***   ##########
 
 To create a react file there are many ways
 npm -> node packet manager (used to install libraries)
@@ -18,7 +18,7 @@ npm create vite@latest
 
 
 -------------------------------------------------------------------------------------------------------------------
-##########  CUSTOM REACT   ###############
+##########  ****CUSTOM REACT****   ###############
  
  TO LEARN HOW REACT INTERPRETS A FUNCTION AND RENDERS IT INTO THE DOM
 
@@ -39,7 +39,7 @@ npm create vite@latest
    
 -------------------------------------------------------------------------------------------------------------------
 
-########    MORE INTO REACT    ##########
+########    ***MORE INTO REACT***    ##########
 
 WE KNOW THAT WE EXPORT A FUNCTION WHICH RETURNS HTML (JSX) THIS FUNCTION IS THEN RENDER ONTO THE DOM <FUNCTION/> BUT AS WE 
 KNOW THAT BASICALLY WE ARE RENDERING A FUNCTION IN FORM OF <FUNCTION/>
@@ -61,7 +61,7 @@ What is Babel used for in React?
 Babel is a JavaScript compiler that converts modern JavaScript code into a version compatible with all browsers. Babel enables React developers to use the latest JavaScript syntax in their components. Babel transpiles modern JavaScript for use in React components and all browsers.
 -------------------------------------------------------------------------------------------------------------------
 
-#########  HOW JAVASCRIPT IS INJECTED IN JSX   #########
+#########  ***HOW JAVASCRIPT IS INJECTED IN JSX***   #########
 
 SO TO INJECT VARIABLES OF JS IN FUNCTIONS WE ENCLOSE THEM IN CURLY BRACES
 EX:
@@ -77,7 +77,7 @@ HERE {username} is called as evaluated expression that is the final outcome of t
 condition it should be done before . The evaluated expression is directly injected after tree is created.
 
 -------------------------------------------------------------------------------------------------------------------
-##########  React Hooks   ###########
+##########  ***React Hooks***   ###########
 
 We saw that in counter project when we clicked add value button the value was updating in console but not in UI
 Hence React take control of UI updation through the help of React Hooks.
