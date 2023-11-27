@@ -96,3 +96,28 @@ MORE HOOKS IN LATER PROJECTS..!!!
 
 -------------------------------------------------------------------------------------------------------------------
 
+###########   ***React Virtual DOM  +   React Fiber Architecture***  ###########
+
+createRoot method behind the scene creates a DOM and compares it with main DOM and updates only the changes
+Whereas the browser removes the whole DOM and repaints it this concept is called as Page Reloading . 
+Hence in Virtual DOM can be tracked in a tree like structure and  change only the updates.
+
+**React Fiber Architecture**(this algorithm is currently used to update the virtual DOM)
+
+React Fiber Architecture is now used by react to update the virtual DOM ,
+
+Features of React Fiber Architecture ->(INTERVIEW **)
+ include the ability to pause, abort, or reuse work as new updates come in; the ability to assign priority to different types of updates; and new concurrency primitives.
+ i.e-->
+ One of the drawback of react was that it updated any changes in virtual DOM instantly into the main DOM ,but if another 2 3 updates are lined up it makes all updates one by one increasing the execution time hence React Fiber Architecture is the algorithm used to pause or abort any update so that no time is wasted in updates that are changed later ..and the final update is made directly into the main DOM .
+
+ ------------------------------------------------------------------------------------------------------------------
+  ########     ***Reconciliation Algorithm***     ##########
+  Reconciliation is an algorithm that compares/diffrentiates between one tree and another tree. 
+  That is it diffrentiates between main DOM of browser and the virtual DOM created using createRoot and then determines which part needs to be changed/updated.
+
+  When u render a react app a tree of nodes that describe the app is generated and stored in memory.
+  The tree is flushed to a rendering environment using .render method.
+  Whenever the app is updated a new tree is generated and is diffed with previous tree to compute which operations are needed to update the render app.
+  -----------------------------------------------------------------------------------------------------------------
+  
